@@ -52,5 +52,5 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("On port 3000.");
+  console.log("On port");
 });
