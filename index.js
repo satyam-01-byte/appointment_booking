@@ -47,6 +47,10 @@ app.post("/book", async (req, res) => {
   res.render("close", { name });
 });
 
-app.listen(3000, () => {
+app.get("/*", (req, res) => {
+  res.redirect("/");
+});
+
+app.listen(process.env.PORT || 3000, () => {
   console.log("On port 3000.");
 });
